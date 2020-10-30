@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider{
+    width: 800px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    .next,.prev{
+        position: absolute;
+        background-color: white;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        text-align: center;
+        cursor: pointer;
+        i{font-size: 20px;
+        transform: translateY(30%);
+        }}
+    .next {
+        right: 10px;
+    }
+    .prev {
+        left: 10px;
+    }
+    ul{
+        display: flex;
+        position: relative;
+        z-index: -1;
+        left: 0;
+        list-style: none;
+        transition: 2s ease-in-out;
+        li{
+            width: 800px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    }
